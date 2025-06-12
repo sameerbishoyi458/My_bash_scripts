@@ -1,4 +1,5 @@
 #!/bin/bash
+#This script will look fo allow groups line and look for root group is present or not if not present it will add.
 #take backup of sshd_config
 cp -av /etc/ssh/sshd_config /etc/ssh/sshd_config_$(date +%Y_%m__%H_%M_%S)
 sed -n '/^Allow groups/ {/root/p}' /etc/ssh/sshd_config|grep root
