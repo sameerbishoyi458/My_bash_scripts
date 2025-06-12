@@ -1,2 +1,2 @@
 # My_bash_scripts
-Personal projects
+Personal projects to improve my shell scripting.
